@@ -1,36 +1,45 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
+body {
+    background: #121e2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .myblock {
-    width: 400px;
-    height: 200px;
+    width: 500px;
     border: 3px solid black;
-    border-radius: 4px;
-    margin: 30px;
+    border-radius: 6px;
+    background: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .lemon {
     width: 180px;
     height: 180px;
-    margin: 10px;
-    background: url("https://cdn4.iconfinder.com/data/icons/Limon_iContainer/512/Grapefruit.png");
+    background: url("https://cdn4.iconfinder.com/data/icons/Limon_iContainer/512/Grapefruit.png") no-repeat center center;
     background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
     border-radius: 5px;
-    float: left;
+    flex-shrink: 0;
 }
 
 .about-lemon h3 {
     text-align: center;
-    padding: 10px 0;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .about-lemon p {
-    font-size: 12px;
-    line-height: 150%;
-    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.5;
 }
