@@ -1,0 +1,177 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('images/mainpages.jpg'); /* 👈 Тут встав фото будинку */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 180px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.logo-icon {
+  width: 40px; /* або підбери свій розмір */
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.add-property {
+  padding: 8px 18px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Hero Content */
+.hero-content {
+  display: flex;
+  justify-content: flex-start; /* Вирівнюємо по лівому краю */
+  align-items: flex-start; /* Вирівнюємо по верхньому краю */
+  padding: 20px 80px 0 80px; /* Зменшили відступ зверху, щоб текст був ближче до верху */
+  height: auto;
+  margin-top: 20px; /* Можна зменшити або видалити */
+}
+
+.hero-text {
+  max-width: 50%;
+  margin-bottom: 150px; /* Збільшуємо відступ знизу */
+}
+.hero-text h1 {
+  font-size: 64px; /* Збільшуємо розмір заголовка */
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.hero-text p {
+  margin-top: 20px;
+  font-size: 20px; /* Збільшуємо розмір параграфа */
+  color: #ccc;
+}
+
+.browse-link {
+  display: inline-block;
+  margin-top: 25px;
+  font-size: 18px; /* Збільшуємо розмір посилання */
+  color: #f7c14d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Yellow stats image at bottom */
+/* Контейнер зображення + текст */
+.bottom-yellow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+}
+
+
+.bottom-yellow img {
+  width: 50%;
+  height: auto;
+  display: block;
+}
+
+.yellow-wrapper {
+  position: relative;
+  display: inline-block; /* або block, якщо ширина 100% */
+}
+
+/* Зображення */
+.yellow-wrapper img {
+  width: 100%; /* або 600px, або 40% — як тобі треба */
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+/* Текст точно всередині блоку */
+.stats-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* щоб займати ту саму висоту, що і зображення */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  pointer-events: none;
+}
+
+.stats-text div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats-text h2 {
+  font-size: 28px;
+  margin: 0;
+}
+.stats-text p {
+  margin: 4px 0 0;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.phone-icon {
+  width: 40px; /* або підбери свій розмір */
+  height: auto;
+  margin-right: 8px;
+  vertical-align: middle;
+}
