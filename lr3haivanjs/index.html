@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced JS Tasks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    button {
+      display: block;
+      margin: 10px 0;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    #clickCountDisplay {
+      margin-top: 10px;
+      font-weight: bold;
+      color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Advanced JavaScript Tasks</h1>
+
+  <!-- Кнопки для завдань -->
+  <button onclick="runGreetingTimer()">1. Greeting Timer with Callback</button>
+  <button onclick="showResult()">2. Calculator</button>
+  <button onclick="runClickCounter()">3. Click Counter (Closure)</button>
+
+  <!-- Вивід кількості кліків -->
+  <div id="clickCountDisplay">Click count: 0</div>
+
+  <!-- Підключення скрипта -->
+  <script src="scripts.js"></script>
+</body>
+</html>
